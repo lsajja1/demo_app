@@ -1,3 +1,4 @@
+
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
@@ -6,7 +7,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'bootstrap-sass', '~> 2.3.1.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -36,3 +37,13 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+gem 'angularjs-rails'
+  gem 'angularjs-rails-resource'
+  gem 'angular-ui-rails'
+  
+source 'http://rubygems.org'
+
+gem 'sinatra', '~> 1.0'
+gem 'shotgun', :group => :reloadable
+gem 'thin', :group => :reloadable
+gem 'json'

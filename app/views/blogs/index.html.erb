@@ -1,0 +1,22 @@
+<h1>Blogs</h1>
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>   
+    <th></th>
+  </tr>
+
+<% @blogs.each do |blog| %>
+  <tr>
+    <td><%= blog.title %></td>
+    <td><%= blog.content %></td>
+    <td>
+      <%= link_to "Show", user_blog_path(@user, blog) %>
+      <%= link_to "Edit", edit_user_blog_path(@user, blog) %>      
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%=link_to "New Blog", new_user_blog_path%>

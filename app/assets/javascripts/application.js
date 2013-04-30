@@ -11,5 +11,14 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
 //= require_tree .
+$(document).ready(function(){
+	
+	$('#divDialog').dialog({
+		autoOpen: false,
+		modal: true,
+	    width: '500px'
+	});
+});

@@ -1,0 +1,7 @@
+ <tr>
+    <td><%= link_to user.name, user_blogs_url(user) %></td>
+    <td><%= user.email %></td>
+    <td><%= link_to 'Show', user, :remote => true %></td>
+    <td><%= link_to 'Edit', edit_user_path(user), :remote => true %></td>
+    <td><%= link_to 'Delete', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+ </tr>
